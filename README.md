@@ -72,6 +72,7 @@ El robot és un vehicle que utilitzant un sistema d'escàners i una càmera es g
 - Peça feta per donar suport als sensors i que puguin estar ben orientats. Fetes amb impresora 3D.
 
 # Sistema Elèctric
+![Esquema Eléctrico](imagenes/robotelectrico.jpg)
 ## Descripción del esquema
 
 La imagen muestra un circuito que incluye una Raspberry Pi, un Arduino Nano, un módulo controlador de motor L298N, dos motores DC, tres sensores ultrasónicos HC-SR04, y una batería. En el modelo físico, también se incluye una powerbank para alimentar a la Raspberry Pi.
