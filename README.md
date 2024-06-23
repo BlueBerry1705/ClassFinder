@@ -24,7 +24,11 @@ El robot és un vehicle que utilitzant un sistema d'escàners i una càmera es g
 - Pareja de ruedas 80x10mm - Blanco
 
   <img src="https://tienda.bricogeek.com/933-thickbox_default/pareja-de-ruedas-80x10mm-blanco.jpg" width="200">
-
+  
+- Controlador de Motors L298
+  
+  <img src="https://www.prometec.net/wp-content/uploads/2016/10/HTB1m34rIpXXXXc9XXXXq6xXFXXXN.jpg" width="200">
+  
 - Sensor de distancia por ultrasonidos HC-SR04
 
   <img src="https://tienda.bricogeek.com/2677-thickbox_default/sensor-de-distancia-por-ultrasonidos-hc-sr04.jpg" width="200">
