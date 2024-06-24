@@ -35,7 +35,7 @@ El robot és un vehicle que utilitzant un sistema d'escàners i una càmera es g
 
 - Raspberry Pi 4 B+
 
-  <img src="https://es.farnell.com/productimages/standard/es_ES/3051885-501.jpg" width="200">
+  <img src="imagenes/robotelectrico.jpg" width="200">
 
 - Cables dupond macho-macho
 
