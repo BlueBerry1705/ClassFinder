@@ -191,7 +191,9 @@ Aquest temps perdut s'afegeix al temps predefinit de desplaçament.
 El robot continua el seu camí, ajustant el temps total segons sigui necessari per arribar al punt de destinació.
 Aquest algoritme permet que el robot navegui de manera eficient i segura dins de l'edifici d'enginyeria, ajustant el seu temps de desplaçament segons les condicions reals del seu entorn.
 # Resultat Final
-  <img src="imagenes/robotfinal.jpeg" width="400" height="200">
+
+  <img src="imagenes/robotfinal.jpg" width="400" height="200">
+
 # Agraïments
 Volem agrair a la UAB per poder facilitar la obtenció dels elements necesàris com per deixarnos les eines per fabricar i treballar amb ells. 
 # Autors
