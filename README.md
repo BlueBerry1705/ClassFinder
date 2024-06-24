@@ -62,13 +62,13 @@ El robot és un vehicle que utilitzant un sistema d'escàners i una càmera es g
   <img src="https://tienda.bricogeek.com/6397-large_default/arduino-nano-every.jpg" width="400" length="300">
 
 ### Peces 3D
-  <img src="images/base_sense_forats.jpeg" width="400" height="200">
+  <img src="imagenes/base_sense_forats.jpeg" width="400" height="200">
 - Base i tapa del robot, peça sense forats. Fetes amb talladora laser
 
-  <img src="images/columna.jpeg" width="150" height="300">
+  <img src="imagenes/columna.jpeg" width="150" height="300">
 - Columna utilitzada per juntar la base i la tapa del robot. Fetes amb impresora 3D.
 
-  <img src="images/ultraSound.jpeg" width="300" height="200">
+  <img src="imagenes/ultraSound.jpeg" width="300" height="200">
 - Peça feta per donar suport als sensors i que puguin estar ben orientats. Fetes amb impresora 3D.
 
 # Sistema Elèctric
