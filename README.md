@@ -33,9 +33,9 @@ El robot és un vehicle que utilitzant un sistema d'escàners i una càmera es g
 
   <img src="https://tienda.bricogeek.com/2677-thickbox_default/sensor-de-distancia-por-ultrasonidos-hc-sr04.jpg" width="200">
 
-- Raspberry Pi 3 B+
+- Raspberry Pi 4 B+
 
-  <img src="https://tienda.bricogeek.com/4669-thickbox_default/kit-basico-raspberry-pi-zero-wifi-microsd-32gb.jpg" width="200">
+  <img src="https://es.farnell.com/productimages/standard/es_ES/3051885-501.jpg" width="200">
 
 - Cables dupond macho-macho
 
