@@ -73,56 +73,56 @@ El robot és un vehicle que utilitzant un sistema d'escàners i una càmera es g
 
 # Sistema Elèctric
 ![Esquema Eléctrico](imagenes/robotelectrico.jpg)
-## Descripción del esquema
+## Descripció de l'esquema
 
-La imagen muestra un circuito que incluye una Raspberry Pi, un Arduino Nano, un módulo controlador de motor L298N, dos motores DC, tres sensores ultrasónicos HC-SR04, y una batería. En el modelo físico, también se incluye una powerbank para alimentar a la Raspberry Pi.
+La imatge mostra un circuit que inclou una Raspberry Pi, un Arduino Nano, un mòdul controlador de motor L298N, dos motors DC, tres sensors ultrasònics HC-SR04, i una bateria. En el model físic, també s'inclou una powerbank per alimentar la Raspberry Pi.
 
-## Enumeración de las conexiones
-
-### Raspberry Pi
-
-- **Conexión USB**: Alimentación de la Raspberry Pi.
-- **Conexión USB**: Puerto micro USB del Arduino Nano.
-- **GPIO**:
-  - Pines 11, 13, 15, 16 conectados a IN1, IN2, IN3, IN4 del controlador L298N.
-  - Pines GPIO 32 y 33 conectados a ENA y ENB del controlador L298N, ya que son PWM. Esto permite modificar el estado entre ON y OFF rápidamente, simulando una señal analógica para regular la potencia entregada a los motores. El pin 32 controla la potencia del motor A y el pin 33 la del motor B.
-
-### Arduino Nano
-
-- **Alimentación**: Conectado a la Raspberry Pi. También sirve de puerto serial para mandar la información de los sensores.
-- **Pines de entrada/salida**:
-  - Varios pines conectados a los sensores HC-SR04: pines del D2 al D7, pin de 5V y GND.
-
-### Módulo L298N
-
-- **Alimentación**: Conectado a la breadboard.
-- **Motores DC**: Conectados a los terminales de salida del módulo.
-- **Conexiones de control**: Conectados a los pines de la Raspberry Pi mencionados anteriormente.
-
-### Sensores HC-SR04
-
-- **Alimentación**: Conectados al Arduino Nano.
-- **Pines de trigger y echo**: Conectados a los pines del Arduino Nano del D2 al D7 para los pines ECHO y TRIGGER. Conectados al pin de 5V y al GND del Arduino.
-
-### Motores DC
-
-- **Conexión**: Conectados a los terminales de salida del módulo L298N.
-
-### Batería
-
-- **Conexión**: Conectada a la breadboard para proporcionar alimentación.
-
-## Enumeración de las conexiones detallada
+## Enumeració de les connexions
 
 ### Raspberry Pi
 
+- **Connexió USB**: Alimentació de la Raspberry Pi.
+- **Connexió USB**: Port micro USB de l'Arduino Nano.
 - **GPIO**:
-  - GPIO a la breadboard (puede estar proporcionando señales de control y datos al Arduino Nano y al módulo L298N).
+  - Pins 11, 13, 15, 16 connectats a IN1, IN2, IN3, IN4 del controlador L298N.
+  - Pins GPIO 32 i 33 connectats a ENA i ENB del controlador L298N, ja que són PWM. Això permet modificar l'estat entre ON i OFF ràpidament, simulant un senyal analògic per regular la potència lliurada als motors. El pin 32 controla la potència del motor A i el pin 33 la del motor B.
 
 ### Arduino Nano
 
-- **Vin**: A la fila de alimentación positiva de la breadboard.
-- **GND**: A la fila de tierra de la breadboard.
+- **Alimentació**: Connectat a la Raspberry Pi. També serveix de port serial per enviar la informació dels sensors.
+- **Pins d'entrada/sortida**:
+  - Diversos pins connectats als sensors HC-SR04: pins del D2 al D7, pin de 5V i GND.
+
+### Mòdul L298N
+
+- **Alimentació**: Connectat a la breadboard.
+- **Motors DC**: Connectats als terminals de sortida del mòdul.
+- **Connexions de control**: Connectats als pins de la Raspberry Pi esmentats anteriorment.
+
+### Sensors HC-SR04
+
+- **Alimentació**: Connectats a l'Arduino Nano.
+- **Pins de trigger i echo**: Connectats als pins de l'Arduino Nano del D2 al D7 per als pins ECHO i TRIGGER. Connectats al pin de 5V i al GND de l'Arduino.
+
+### Motors DC
+
+- **Connexió**: Connectats als terminals de sortida del mòdul L298N.
+
+### Bateria
+
+- **Connexió**: Connectada a la breadboard per proporcionar alimentació.
+
+## Enumeració de les connexions detallada
+
+### Raspberry Pi
+
+- **GPIO**:
+  - GPIO a la breadboard (pot estar proporcionant senyals de control i dades a l'Arduino Nano i al mòdul L298N).
+
+### Arduino Nano
+
+- **Vin**: A la fila d'alimentació positiva de la breadboard.
+- **GND**: A la fila de terra de la breadboard.
 - **D2**: A Trigger del sensor HC-SR04.
 - **D3**: A Echo del sensor HC-SR04.
 - **D4**: A Trigger del sensor HC-SR04.
@@ -130,35 +130,35 @@ La imagen muestra un circuito que incluye una Raspberry Pi, un Arduino Nano, un 
 - **D6**: A Trigger del sensor HC-SR04.
 - **D7**: A Echo del sensor HC-SR04.
 
-### Módulo L298N
+### Mòdul L298N
 
-- **IN1**: A Pin GPIO 11 de la Raspberry Pi.
-- **IN2**: A Pin GPIO 13 de la Raspberry Pi.
-- **IN3**: A Pin GPIO 15 de la Raspberry Pi.
-- **IN4**: A Pin GPIO 16 de la Raspberry Pi.
-- **ENA**: A Pin GPIO 32.
-- **ENB**: A Pin GPIO 33.
-- **OUT1**: A Motor DC (izquierdo).
-- **OUT2**: A Motor DC (izquierdo).
-- **OUT3**: A Motor DC (derecho).
-- **OUT4**: A Motor DC (derecho).
-- **GND**: A la fila de tierra de la breadboard.
-- **+12V**: A la fila de alimentación positiva de la breadboard.
+- **IN1**: Al Pin GPIO 11 de la Raspberry Pi.
+- **IN2**: Al Pin GPIO 13 de la Raspberry Pi.
+- **IN3**: Al Pin GPIO 15 de la Raspberry Pi.
+- **IN4**: Al Pin GPIO 16 de la Raspberry Pi.
+- **ENA**: Al Pin GPIO 32.
+- **ENB**: Al Pin GPIO 33.
+- **OUT1**: Al Motor DC (esquerre).
+- **OUT2**: Al Motor DC (esquerre).
+- **OUT3**: Al Motor DC (dret).
+- **OUT4**: Al Motor DC (dret).
+- **GND**: A la fila de terra de la breadboard.
+- **+12V**: A la fila d'alimentació positiva de la breadboard.
 
-### Sensores HC-SR04
+### Sensors HC-SR04
 
-- **VCC**: De cada sensor a la fila de alimentación positiva del Arduino Nano.
-- **GND**: De cada sensor a la fila de tierra del Arduino Nano.
-- **Trigger y Echo**: Conectados a los pines correspondientes del Arduino Nano (ver arriba).
+- **VCC**: De cada sensor a la fila d'alimentació positiva de l'Arduino Nano.
+- **GND**: De cada sensor a la fila de terra de l'Arduino Nano.
+- **Trigger i Echo**: Connectats als pins corresponents de l'Arduino Nano (veure a dalt).
 
-### Motores DC
+### Motors DC
 
-- **Conexión**: Conectados a los terminales de salida del módulo L298N (ver arriba).
+- **Connexió**: Connectats als terminals de sortida del mòdul L298N (veure a dalt).
 
-### Batería
+### Bateria
 
-- **+**: A la fila de alimentación positiva de la breadboard.
-- **-**: A la fila de tierra de la breadboard.
+- **+**: A la fila d'alimentació positiva de la breadboard.
+- **-**: A la fila de terra de la breadboard.
 
 # Algorisme Utilitzat
  Hem desenvolupat un robot que utilitza sensors d'ultrasons connectats a un Arduino per mesurar la distància entre el robot i els objectes del seu entorn. Aquesta informació es transmet des de l'Arduino a una Raspberry Pi a través d'un port sèrie. Quan s'inicialitza el sistema, es rep la distància de cada sensor.
