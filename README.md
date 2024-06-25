@@ -7,6 +7,7 @@
 - Sistema Elèctric
 - Algorisme Utilitzat
 - Resultat Final
+  - Com utilitzar-lo
 - Agraïments
 - Autors
 
