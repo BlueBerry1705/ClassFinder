@@ -190,9 +190,48 @@ Es mesura el temps perdut degut a la detecció i l'esquiva de l'obstacle.
 Aquest temps perdut s'afegeix al temps predefinit de desplaçament.
 El robot continua el seu camí, ajustant el temps total segons sigui necessari per arribar al punt de destinació.
 Aquest algoritme permet que el robot navegui de manera eficient i segura dins de l'edifici d'enginyeria, ajustant el seu temps de desplaçament segons les condicions reals del seu entorn.
+
+Per a que pugui avançar segons aquest algorisme, el robot utilitza una llibreria creada per nosaltres que conté totes les funcións necesaries per a la mobilitat basica del robot, aquesta llibreria utilitza els pins GPIO 
+de la Raspberry pi per a controlar la velocitat i per lo tant tambe els girs del robot.
+
 # Resultat Final
 
   <img src="imagenes/robotfinal.jpg" width="400" height="200">
+  
+## Com Utilitzar-lo
+
+### Pas 1: Connectar un Dispositiu Mòbil
+
+Per utilitzar el robot, el primer pas és connectar un dispositiu mòbil amb la seva adreça MAC a un port sèrie de Bluetooth de la Raspberry Pi. 
+Aquest pas només cal fer-lo un cop. Cada vegada que s'encengui el robot, la connexió s'establirà automàticament.
+
+### Pas 2: Introduir la Classe
+
+Després de connectar el dispositiu mòbil, utilitza l'aplicació per introduir la classe a la que vols anar (per exemple, Q21005) perquè el robot et guiï fins a l'aula.
+
+### Exemple d'Ús
+
+1. Connecta el teu dispositiu mòbil:
+    ```sh
+    # sudo rfcomm bind 0 XX:XX:XX:XX:XX:XX
+    bluetoothctl
+    ```
+    - Activa el Bluetooth al teu dispositiu mòbil.
+    - Assegura't que el Bluetooth de la Raspberry Pi és detectable.
+    - Aparella el dispositiu usant la seva adreça MAC. (Comanda d'adalt).
+    - Confirma l'aparellament en ambdós dispositius.
+
+2. Utilitza l'aplicació per enviar el missatge:
+    - Obre l'aplicació i selecciona la opció de connexió amb el robot.
+    - Introdueix el codi de la classe a la que vols anar (per exemple, Q21005).
+    - Envia el missatge a través del port sèrie del Bluetooth.
+
+### Resolució de Problemes
+
+- **Problemes de Connexió**: Si el dispositiu mòbil no es connecta automàticament, repeteix el procés d'aparellament.
+- **Problemes de Guia**: Assegura't que el nom de la classe està introduït correctament i que el robot té un camí clar.
+
+
 
 # Agraïments
 Volem agrair a la UAB per poder facilitar la obtenció dels elements necesàris com per deixarnos les eines per fabricar i treballar amb ells. 
